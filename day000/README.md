@@ -4,9 +4,13 @@ Install:
 
 https://www.python.org/downloads/
 
+```python3```
+
 https://brew.sh
 
-brew install ansible
+```brew```
 
-ansible --version
+```brew install ansible```
+
+```ansible --version```
 
