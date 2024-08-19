@@ -12,9 +12,15 @@ $ ansible [pattern] -m [module] -a "[module options]"
 
 ```ansible localhost -m find -a "paths=~/Downloads file_type=directory"```
 
+Install bat - https://github.com/sharkdp/bat
+
+##
+        brew install bat
+
 ## first playbook
 A simple playbook to execute a couple of tasks
 ##
+    bat 01_first_playbook.yml
     ansible-playbook 01_first_playbook.yml
 
 
