@@ -39,3 +39,13 @@ Simulate orchestration with localhost defined multiple times as target
 ```
 ansible-playbook 03_orchestrate.yml -i myhosts
 ```
+
+## Notify Handler example
+Simulate how handlers can be triggered with notify
+## 
+    cd notify_handler
+    bat myhosts
+    bat 04_notify_handler.yml
+```
+ansible-playbook 04_notify_handler.yml -i myhosts
+```
