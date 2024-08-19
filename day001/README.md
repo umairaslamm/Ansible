@@ -13,13 +13,13 @@ $ ansible [pattern] -m [module] -a "[module options]"
 ```ansible localhost -m find -a "paths=~/Downloads file_type=directory"```
 
 ## first playbook
-
+A simple playbook to execute a couple of tasks
 ##
     ansible-playbook 01_first_playbook.yml
 
 
 ## first challenge
-
+Write a playbook to find files on current path and display them
 ##
     ansible-playbook 02_first_challenge.yml
 
