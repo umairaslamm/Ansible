@@ -48,3 +48,12 @@ Lets verify the copy by sshing into a managed node
 vagrant ssh host1
 cat /tmp/hosts
 ```
+
+### Some useful vagrant commands
+
+```
+vagrant suspend  ## suspends the machine
+vagrant resume   ## resume a suspended vagrant machine 
+vagrant halt     ## stops the vagrant machine
+vagrant destroy  ## stops and deletes all traces of the vagrant machine
+```
