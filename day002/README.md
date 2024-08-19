@@ -57,3 +57,10 @@ vagrant resume   ## resume a suspended vagrant machine
 vagrant halt     ## stops the vagrant machine
 vagrant destroy  ## stops and deletes all traces of the vagrant machine
 ```
+### Remove ssh keys from known hosts
+
+```
+sed -i '' "/11022/d" ~/.ssh/known_hosts
+
+sed -i '' "/12022/d" ~/.ssh/known_hosts
+```

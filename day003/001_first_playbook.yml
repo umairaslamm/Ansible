@@ -1,0 +1,24 @@
+---
+- name: First Playbook
+  hosts: all
+
+  tasks:
+
+  - name: Upgrade all apt packages
+    apt:
+      force_apt_get: yes
+      upgrade: dist
+    become: yes
+  
+  - name: Add user 'ali'
+    ansible.builtin.user:
+      name: ali
+    become: yes
+    become_method: sudo
+  
+  - name: Copy file hosts with permissions
+    ansible.builtin.copy:
+      src: ./hosts
+      dest: /tmp/hosts_backup
+      mode: '0644'
+  
