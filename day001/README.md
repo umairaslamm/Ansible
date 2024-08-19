@@ -27,5 +27,15 @@ A simple playbook to execute a couple of tasks
 ## first challenge
 Write a playbook to find files on current path and display them
 ##
+    bat 02_first_challenge.yml
     ansible-playbook 02_first_challenge.yml
 
+## Orchestrate example
+Simulate orchestration with localhost defined multiple times as target
+## 
+    cd orchestrate
+    bat myhosts
+    bat 03_orchestrate.yml
+```
+ansible-playbook 03_orchestrate.yml -i myhosts
+```
