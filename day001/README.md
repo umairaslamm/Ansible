@@ -17,23 +17,28 @@ Install bat - https://github.com/sharkdp/bat
 ##
         brew install bat
 
-## first playbook
+### first playbook
+
 A simple playbook to execute a couple of tasks
+
 ##
     bat 01_first_playbook.yml
     ansible-playbook 01_first_playbook.yml
 
 
-## first challenge
+### first challenge
+
 Write a playbook to find files on current path and display them
+
 ##
     bat 02_first_challenge.yml
     ansible-playbook 02_first_challenge.yml
 
 ## Orchestrate example
+
 Simulate orchestration with localhost defined multiple times as target
+
 ## 
-    cd orchestrate
     bat myhosts
     bat 03_orchestrate.yml
 ```
@@ -41,11 +46,14 @@ ansible-playbook 03_orchestrate.yml -i myhosts
 ```
 
 ## Notify Handler example
+
 Simulate how handlers can be triggered with notify
+
 ## 
-    cd notify_handler
     bat myhosts
     bat 04_notify_handler.yml
 ```
 ansible-playbook 04_notify_handler.yml -i myhosts
 ```
+
+
