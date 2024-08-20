@@ -69,3 +69,18 @@ ansible-playbook 002_esclated_privilege_playbook.yml
 ```
 ansible-playbook 003_variables.yml
 ```
+
+## Lets use some tags
+
+select tags
+```
+ansible-playbook 004_tags.yml --tags ntp
+```
+list tags
+```
+ansible-playbook 004_tags.yml --list-tags
+```
+skip tags
+```
+ansible-playbook 004_tags.yml --skip-tags ntp_start
+```

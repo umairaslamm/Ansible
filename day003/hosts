@@ -1,2 +1,8 @@
+
+[all_hosts]
 host1 ansible_host=127.0.0.1 ansible_user=vagrant ansible_port=21022 ansible_ssh_private_key_file=./.vagrant/machines/host1/virtualbox/private_key
 host2 ansible_host=127.0.0.1 ansible_user=vagrant ansible_port=22022 ansible_ssh_private_key_file=./.vagrant/machines/host2/virtualbox/private_key
+
+[webservers]
+host1
+host2
