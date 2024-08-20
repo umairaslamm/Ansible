@@ -5,7 +5,7 @@ Lets bring up the vm's
 ##
     vagrant up
 
-## First playbook with a couple of tasks
+## First playbook -- a couple of tasks
 * add user
 + copy file with permissions
 
@@ -64,3 +64,8 @@ https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_privilege_escal
 ansible-playbook 002_esclated_privilege_playbook.yml
 ```
 
+## Third playbook - using variables
+
+```
+ansible-playbook 003_variables.yml
+```

@@ -1,0 +1,22 @@
+---
+- name: Variables Playbook
+  hosts: all
+  become: yes
+  vars:
+      state: latest
+      user: omer
+
+  tasks:
+    - name: Upgrade all apt packages
+      apt:
+        update_cache: yes
+        cache_valid_time: 86400
+
+    - name: Add the user {{ user }}
+      ansible.builtin.user:
+        name: "{{ user }}"
+  
+    - name: Install the {{ state }} of package "nginx"
+      apt:
+        name: "nginx"
+        state: "{{ state }}"
