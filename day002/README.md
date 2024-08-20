@@ -1,4 +1,4 @@
-# Setup a couple of vms
+# Setup a couple of vms and execute ad hoc commands
 
 ## Install:
 
