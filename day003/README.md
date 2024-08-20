@@ -5,10 +5,9 @@ Lets bring up the vm's
 ##
     vagrant up
 
-## First playbook with three tasks
-- upgrade all apt packages
+## First playbook with a couple of tasks
 * add user
-+ copy file hosts with permissions
++ copy file with permissions
 
 ### Setup inventory file to avoid specifying the location with -i
 
@@ -47,7 +46,21 @@ ansible all -i hosts --limit host2 -m ping
 ```
 
 
-## Executing first playbook
+### Executing first playbook
 ```
 ansible-playbook 001_first_playbook.yml
 ```
+
+## Second playbook - execute tasks with root privileges
+
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_privilege_escalation.html
+
+- upgrade all apt packages
+* install package
++ start and register service as startup up
+
+
+```
+ansible-playbook 002_esclated_privilege_playbook.yml
+```
+
