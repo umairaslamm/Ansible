@@ -94,3 +94,16 @@ ansible-playbook 004_tags.yml --start-at-task 'Install NTP'
 ```
 ansible-playbook 004_tags.yml --step
 ```
+
+## Specifying variables in inventory file
+
+add the following to hosts file
+[all:vars]
+temp_file=/tmp/somefile
+
+```
+bat hosts
+bat 005_invvars.yml
+ansible-playbook 005_invvars.yml -e file_state=touch
+```
+

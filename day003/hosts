@@ -6,3 +6,6 @@ host2 ansible_host=127.0.0.1 ansible_user=vagrant ansible_port=22022 ansible_ssh
 [webservers]
 host1
 host2
+
+[all:vars]
+temp_file=/tmp/somefile
