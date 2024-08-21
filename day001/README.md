@@ -56,4 +56,19 @@ Simulate how handlers can be triggered with notify
 ansible-playbook 04_notify_handler.yml -i myhosts
 ```
 
+## Special Variables - magic variables
+
+https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html
+
+```
+bat 05_controlnode.yml
+ansible-playbook 05_controlnode.yml -v
+```
+
+## Bypass the SSH on localhost - communicate with the local node directly
+
+```
+bat 06_conn_controlnode.yml
+ansible-playbook 06_conn_controlnode.yml
+```
 
