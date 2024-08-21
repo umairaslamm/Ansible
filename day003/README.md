@@ -85,3 +85,12 @@ skip tags
 ansible-playbook 004_tags.yml --skip-tags ntp_start
 ```
 
+## Using command line to control execution
+
+```
+ansible-playbook 004_tags.yml --start-at-task 'Install NTP'
+```
+
+```
+ansible-playbook 004_tags.yml --step
+```
