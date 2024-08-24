@@ -34,3 +34,19 @@ cli has the highest precedence
 ```
 ansible-playbook 010_roles.yml -e "myvar='This is from cli'"
 ```
+
+## Templating with role
+
+```
+bat defaults/main.yml
+ansible-playbook 010_roles.yml
+bat testrole1/templates/jinja2.j2
+
+vagrant ssh host1
+curl localhost
+exit
+
+ansible-playbook 010_roles.yml -e "webserver_message='This is my real message'"
+```
+
+
