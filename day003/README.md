@@ -145,3 +145,16 @@ ansible-playbook 006_use_templates.yml --check
 ```
 
 
+## Idempotence
+
+```
+bat 010_register_state.yml
+ansible-playbook 010_register_state.yml
+```
+
+Modifiy the file
+```
+sed -i '' 's/file/test/' files/idempotent.txt
+bat files/idempotent.txt
+ansible-playbook 010_register_state.yml
+```
