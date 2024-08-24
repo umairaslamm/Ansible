@@ -1,0 +1,5 @@
+---
+# tasks file for testrole1
+- name: Test variable
+  debug:
+    var: myvar

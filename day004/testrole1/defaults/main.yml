@@ -1,0 +1,3 @@
+---
+# defaults file for testrole1
+myvar: This is the default from role defaults

@@ -1,0 +1,3 @@
+---
+# vars file for testrole1
+myvar: This is the value from vars in role
