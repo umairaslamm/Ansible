@@ -123,3 +123,19 @@ sudo systemctl restart apache2
 exit
 ```
 
+## Conditional execution
+
+```
+bat 007_cond.yml
+ansible-playbook 007_cond.yml
+```
+
+## Loops
+
+```
+bat 008_loop1.yml
+ansible-playbook 008_loop1.yml
+bat 009_loop2.yml
+ansible-playbook 009_loop2.yml
+```
+
