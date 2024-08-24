@@ -11,3 +11,6 @@
 ## Day 004 : [Ansible Roles](day004/README.md)
 
 ## Day 005 : [Ansible Vault](day005/README.md)
+
+## Day 006 : [Network Management](day006/README.md)
+

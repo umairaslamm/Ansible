@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: False
+  
+  vars:
+    ipgw: 10.10.0.1
+    ipnm: 255.255.255.224
+  
+  tasks:
+  - set_fact: ip1="{{ipgw}}/{{ipnm}}"
+  - set_fact: ip2="{{ip1|ansible.utils.ipaddr('network/prefix')}}"
+  - debug:
+        msg: "Our network is {{ip2}}, gateway is {{ipgw}}"
+  
+  - set_fact: ip3="{{ipgw|ansible.utils.ipaddr('int') + 1}}"
+  - set_fact: ip4="{{ip3|ansible.utils.ipv4('address')}}/{{ip2|ansible.utils.ipaddr('prefix')}}"  
+  - debug:
+        msg: "The next host address is: {{ip4}}"
