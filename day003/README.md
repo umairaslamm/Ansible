@@ -107,3 +107,19 @@ bat 005_invvars.yml
 ansible-playbook 005_invvars.yml -e file_state=touch
 ```
 
+## Using jinja templating
+
+```
+bat jinja2.j2
+bat 006_use_templates.yml
+ansible-playbook 006_use_templates.yml
+```
+### Steps to fix apache2 startup due to port collision
+```
+vagrant ssh host1
+sudo vi /etc/apache2/ports.conf -- replace Listen 80 with Listen 8080
+sudo vi /etc/apache2/sites-enabled/000-default.conf -- replace <VirtualHost *:80> with <VirtualHost *:8080>
+sudo systemctl restart apache2
+exit
+```
+
