@@ -139,3 +139,9 @@ bat 009_loop2.yml
 ansible-playbook 009_loop2.yml
 ```
 
+## Test playbooks with check mode
+```
+ansible-playbook 006_use_templates.yml --check
+```
+
+
